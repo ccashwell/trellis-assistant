@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trellis Assistant</title>
+  </head>
+  <body>
+    <p>Note: Widget will render in bottom-right of this screen.</p>
+
+    <script src="http://cdn.trellisconnect.com/sdk/v1.1/trellis-connect.js"></script>
+    <script src="./widget.js"></script>
+    <script>
+      TrellisAssistant.configure({
+        clientId: 'CHALLENGE',
+        messages: {
+          initial: 'Already insured? Easily get your VIN by logging in with your current policy.',
+          loading: 'Loading your policy information...',
+          success: 'Your information is ready! Tap to check your current policy information.',
+          error: 'An error has occurred. We are looking into it. Sorry this didn’t work.'
+        }
+      });
+    </script>
+  </body>
+</html>
